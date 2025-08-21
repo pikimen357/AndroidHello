@@ -17,6 +17,8 @@
         android:layout_height="wrap_content"
         android:background="#800080"
         android:padding="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -26,28 +28,59 @@
         android:id="@+id/txt_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
         android:background="@color/yellow"
         android:text="@string/_0"
         android:textAlignment="center"
-        android:textSize="256sp" />
+        android:textSize="256sp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/min"/>
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/_0"/>
+
+            <Button
+                android:id="@+id/btn_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/count"/>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btn_toast"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/toast" />
+            android:layout_marginTop="30dp"
+            android:text="@string/toast"
 
-        <Button
-            android:id="@+id/btn_count"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/count"/>
+            />
+
     </LinearLayout>
+
 </LinearLayout>

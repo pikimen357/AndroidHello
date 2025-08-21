@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">HelloWorldApp</string>
+    <string name="app_name">Hello APP by Vicky</string>
     <string name="toast">Toast</string>
-    <string name="count">COUNT</string>
+    <string name="count">PLUS</string>
     <string name="min">MIN</string>
-    <string name="_0">0</string>
+    <string name="_0">RESET</string>
 </resources>
