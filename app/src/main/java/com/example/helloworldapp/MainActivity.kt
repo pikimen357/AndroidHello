@@ -23,11 +23,15 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             txtNumber.text = number.toString()
             btnCount.setOnClickListener{
+
+                // increase number
                 number++
                 txtNumber.text=number.toString()
             }
 
             btnMin.setOnClickListener {
+
+                //decrease number
                 number--
                 txtNumber.text=number.toString()
             }
